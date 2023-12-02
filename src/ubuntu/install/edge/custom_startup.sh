@@ -3,7 +3,7 @@ set -ex
 START_COMMAND="microsoft-edge"
 PGREP="msedge"
 MAXIMIZE="true"
-DEFAULT_ARGS=""
+DEFAULT_ARGS=" --high-dpi-support=1 --force-device-scale-factor=1.5"
 
 if [[ $MAXIMIZE == 'true' ]] ; then
     DEFAULT_ARGS+=" --start-maximized"
